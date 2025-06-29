@@ -1,14 +1,16 @@
+import AnimateLogo from "./AnimateLogo"
 import Button from "./Button"
 
 const AppBar = () => {
     return (
-        <div style={{ fontFamily: 'f2, sans-serif' }} className="pt-[30px] text-[16px] text-gray-500 grid grid-cols-15" >
+        <div style={{ fontFamily: 'f2, sans-serif' }} className="pt-[30px] max-md:flex max-md:justify-center max-md:items-center text-[16px] text-gray-500 grid grid-cols-15" >
             {/* logo */}
-            <div style={{ fontFamily: 'f5, sans-serif' }} className="tbh_logo relative top-[-8px] border-black col-span-2 flex items-center ">
-                <img src="/logo.svg" className="h-[110px] w-[160px] " alt="" />
+            <div style={{ fontFamily: 'f5, sans-serif' }} className="tbh_logo h-[110px] w-[160px] max-md:h-[140px] max-md:w-[190px] relative top-[-8px] border-black col-span-2 flex items-center ">
+                {/* <img src="/logo.svg" className="h-[110px] w-[160px] " alt="" /> */}
+                <AnimateLogo />
             </div>
             {/* menu items */}
-            <div className="flex flex-row gap-[26px] col-span-9 items-center ">
+            <div className="flex flex-row gap-[26px] max-md:hidden col-span-9 items-center ">
                 <span className="hover:text-zinc-950 cursor-pointer duration-300">Basic Needs</span>
                 <span className="hover:text-zinc-950 cursor-pointer duration-300">K12</span>
                 <span className="hover:text-zinc-950 cursor-pointer duration-300">Heiger Ed</span>
@@ -16,7 +18,7 @@ const AppBar = () => {
                 <span className="hover:text-zinc-950 cursor-pointer duration-300">Enterprise</span>
             </div>
             {/* login and join button */}
-            <div className="flex flex-row gap-[16px] col-span-4 justify-center items-center">
+            <div className="flex flex-row gap-[16px] max-md:hidden col-span-4 justify-center items-center">
                 <Button variant="Empty" >
                     Login
                 </Button>
