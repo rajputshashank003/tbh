@@ -99,7 +99,8 @@ const Page4 = () => {
                         <img
                             src="/LandingPage/Page4/i1.png"
                             alt="Dashboard Visual"
-                            className="absolute bottom-0 -right-[24%] w-full h-full object-contain"
+                            style={{ bottom: openIndex !== null ? '-8%' : 0 }}
+                            className="absolute bottom-0 -right-[24%] lg:-right-[28%] w-full h-full object-contain"
                         />
                     </div>
                 </div>
