@@ -13,11 +13,11 @@ const Page5 = () => {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setFade(false); // fade out
+            setFade(false);
             setTimeout(() => {
                 setCurrentImage(prev => (prev + 1) % imageList.length);
-                setFade(true); // fade in
-            }, 300); // fade-out duration
+                setFade(true);
+            }, 300);
         }, 2000);
         return () => clearInterval(interval);
     }, []);
@@ -53,8 +53,9 @@ const Page5 = () => {
                         src={imageList[currentImage]}
                         alt="Therapist Tags"
                         style={{ opacity: fade ? 1 : 0 }}
-                        className="w-full h-full z-[0] object-contain transition-opacity duration-500 scale-[0.95] lg:scale-[1.05] absolute top-[-3%] left-0"
+                        className="w-full h-full z-[0] object-contain transition-opacity duration-500 scale-[0.95] absolute top-[-3%] left-0"
                     />
+                    {/* center */}
                     <div data-scroll data-scroll-speed={-0.04} className=" absolute top-[50%] left-[50%] z-[3] ">
                         <motion.img
                             initial={{ y: 0 }}
@@ -62,47 +63,51 @@ const Page5 = () => {
                             transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
                             src="/LandingPage/Page5/tag-0.png"
                             alt="Therapist Tags"
-                            className="w-[60px] z-[3] sm:w-[100px] h-full object-contain scale-[0.94] lg:scale-[1.05] "
+                            className="w-[90px] z-[3] sm:w-[100px] h-full object-contain scale-[0.94] lg:scale-[1.05] "
                         />
                     </div>
-                    <div data-scroll data-scroll-speed={0.06} className="absolute top-[10%] left-0 z-[3] " >
+                    {/* top left */}
+                    <div data-scroll data-scroll-speed={0.06} className="absolute top-[10%] max-sm:top-[20%] left-0 z-[3] " >
                         <motion.img
                             initial={{ y: 0 }}
                             animate={{ y: [-8, 0, -8] }}
                             transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
                             src="/LandingPage/Page5/tag-1.png"
                             alt="Therapist Tags"
-                            className="w-[60px] z-[3] sm:w-[100px] h-full object-contain scale-[0.94] lg:scale-[1.05]"
+                            className="w-[80px] z-[3] sm:w-[100px] h-full object-contain scale-[0.94] lg:scale-[1.05]"
                         />
                     </div>
-                    <div data-scroll data-scroll-speed={-0.08} className=" absolute top-[10%] right-0 z-[3] ">
+                    {/* top right */}
+                    <div data-scroll data-scroll-speed={-0.08} className=" absolute max-sm:top-[20%] top-[10%] right-0 z-[3] ">
                         <motion.img
                             initial={{ y: 0 }}
                             animate={{ y: [5, 0, 5] }}
                             transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
                             src="/LandingPage/Page5/tag-2.png"
                             alt="Therapist Tags"
-                            className="w-[60px] z-[3] sm:w-[100px] h-full object-contain scale-[0.94] lg:scale-[1.05]"
+                            className="w-[90px] z-[3] sm:w-[100px] h-full object-contain scale-[0.94] lg:scale-[1.05]"
                         />
                     </div>
-                    <div data-scroll data-scroll-speed={0.06} className="absolute top-[80%] right-[10%] z-[3] ">
+                    {/* bottom right */}
+                    <div data-scroll data-scroll-speed={0.06} className="absolute max-sm:top-[60%] top-[80%] right-[10%] z-[3] ">
                         <motion.img
                             initial={{ y: 0 }}
                             animate={{ y: [6, 0, 6] }}
                             transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
                             src="/LandingPage/Page5/tag-3.png"
                             alt="Therapist Tags"
-                            className="w-[60px] z-[3] sm:w-[100px] h-full object-contain scale-[0.94] lg:scale-[1.05] "
+                            className="w-[80px] z-[3] sm:w-[100px] h-full object-contain scale-[0.94] lg:scale-[1.05] "
                         />
                     </div>
-                    <div data-scroll data-scroll-speed={-0.03} className=" absolute top-[80%] left-0 z-[3] ">
+                    {/* bottom left */}
+                    <div data-scroll data-scroll-speed={-0.03} className=" absolute max-sm:top-[60%] top-[80%] left-0 z-[3] ">
                         <motion.img
                             initial={{ y: 0 }}
                             animate={{ y: [-5, 0, -5] }}
                             transition={{ repeat: Infinity, duration: 1.6, ease: "easeInOut" }}
                             src="/LandingPage/Page5/tag-4.png"
                             alt="Therapist Tags"
-                            className="w-[60px] z-[3] sm:w-[100px] h-full object-contain scale-[0.94] lg:scale-[1.05]"
+                            className="w-[90px] z-[3] sm:w-[100px] h-full object-contain scale-[0.94] lg:scale-[1.05]"
                         />
                     </div>
                 </div>

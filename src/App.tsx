@@ -15,7 +15,7 @@ const App = () => {
     return (
         <BrowserRouter>
             <AppBarProvider>
-                <div className="min-h-screen px-[20px] bg-[#F8F4F2]">
+                <div className="min-h-screen px-[20px] bg-[#F8F4F2] pb-[60px] ">
                     <AppBar />
                     <SlideMenu/>
                     <LandingPage />

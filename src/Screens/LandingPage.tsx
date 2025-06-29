@@ -3,6 +3,7 @@ import Page2 from "../components/LandingPage/Page2"
 import Page3 from "../components/LandingPage/Page3"
 import Page4 from "../components/LandingPage/Page4"
 import Page5 from "../components/LandingPage/Page5"
+import Page6 from "../components/LandingPage/Page6"
 
 const LandingPage = () => {
     return (
@@ -13,6 +14,7 @@ const LandingPage = () => {
             <Page3 />
             <Page4 />
             <Page5 />   
+            <Page6 />
         </div>
     )
 }
