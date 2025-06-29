@@ -30,7 +30,7 @@ const AppBar = () => {
                     Join Now
                 </Button>
             </div>
-            <div className="z-[999999999] bg-white shadow-[0px_0px_16px] shadow-black/30 flex justify-center items-center rounded-full h-[50px] w-[50px] " onClick={handleMenu}>
+            <div className="z-[999999999] md:hidden bg-white shadow-[0px_0px_16px] shadow-black/30 flex justify-center items-center rounded-full h-[50px] w-[50px] " onClick={handleMenu}>
                 <MenuCrossIcons />
             </div>
         </div>
