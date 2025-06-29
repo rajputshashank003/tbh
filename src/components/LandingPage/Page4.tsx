@@ -81,7 +81,7 @@ const Page4 = () => {
                                             transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
                                             className="text-[24px] cursor-pointer hover:scale-[1.1] duration-200 font-bold bg-white rounded-full w-[40px] h-[40px] flex justify-center items-center"
                                         >
-                                            +
+                                            { openIndex !== null && openIndex === index ? '-' : '+' }
                                         </motion.span>
                                     </div>
                                     <div className={`bg-white rounded-xl expand_para_${index}`}>
