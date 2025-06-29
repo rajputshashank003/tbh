@@ -1,6 +1,5 @@
-// context/AppBarContext.tsx
 import gsap from "gsap";
-import React, { createContext, useContext, useEffect, useState } from "react";
+import React, { createContext, useContext, useState } from "react";
 
 type AppBarContextType = {
     isOpen: boolean;
@@ -26,16 +25,10 @@ export const AppBarProvider: React.FC<{ children: React.ReactNode }> = ({ childr
             delay: isOpen ? 0.5 : 0.2,
             ease: "power3.inOut",
         }, "abc");
-        console.log('changed----------------------------');
         setIsOpen(prev => {
-            console.log('prev : ', prev);
             return !prev;
         });
     }
-
-    useEffect(() => {
-        console.log(isOpen, 'isopen changed---');
-    }, [ isOpen ]);
 
     return (
         <AppBarContext.Provider value={{ isOpen, setIsOpen, handleMenu }}>
