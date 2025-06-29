@@ -395,7 +395,7 @@ const Page1 = () => {
                     />
                     <div className="absolute bottom-0 h-2 w-full bg-[#F8F4F2]"></div>
                 </div>
-                <div className="video_2 absolute top-[35%] max-sm:-left-[10%] max-sm:w-[130px] md:top-[35%] md:-left-[20%] w-[150px] md:w-[200px]">
+                <div className="video_2 absolute top-[35%] max-sm:-left-[0%] max-sm:w-[130px] md:top-[35%] md:-left-[20%] w-[150px] md:w-[200px]">
                     <video
                         className="outline-none ring-0 shadow-none m-0 p-0 block"
                         src="/v3.mp4"
