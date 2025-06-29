@@ -2,19 +2,26 @@ import { useEffect } from "react"
 import LandingPage from "./Screens/LandingPage"
 import AppBar from "./components/AppBar"
 import LocomotiveScroll from "locomotive-scroll"
+import { BrowserRouter } from "react-router-dom"
+import SlideMenu from "./components/SlideMenu"
+import { AppBarProvider } from "./Contexts/UseAppBar"
 
 const App = () => {
     useEffect(() => {
         const locomotive = new LocomotiveScroll();
-        
         return () => locomotive.destroy();
     }, []);
     
     return (
-        <div className="min-h-screen px-[20px] bg-[#F8F4F2] ">
-            <AppBar />
-            <LandingPage />
-        </div>
+        <BrowserRouter>
+            <AppBarProvider>
+                <div className="min-h-screen px-[20px] bg-[#F8F4F2]">
+                    <AppBar />
+                    <SlideMenu/>
+                    <LandingPage />
+                </div>
+            </AppBarProvider>
+        </BrowserRouter>
     )
 }
 

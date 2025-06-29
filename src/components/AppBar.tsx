@@ -1,11 +1,15 @@
+import { useAppBar } from "../Contexts/UseAppBar"
 import AnimateLogo from "./AnimateLogo"
 import Button from "./Button"
+import MenuCrossIcons from "./MenuCrossIcons";
 
 const AppBar = () => {
+    const { handleMenu } = useAppBar();
+
     return (
         <div style={{ fontFamily: 'f2, sans-serif' }} className="pt-[30px] max-md:flex max-md:justify-center max-md:items-center text-[16px] text-gray-500 grid grid-cols-15" >
             {/* logo */}
-            <div style={{ fontFamily: 'f5, sans-serif' }} className="tbh_logo h-[110px] w-[160px] max-md:h-[140px] max-md:w-[190px] relative top-[-8px] border-black col-span-2 flex items-center ">
+            <div style={{ fontFamily: 'f5, sans-serif' }} className="tbh_logo h-[110px] z-[999999] w-[160px] max-md:h-[140px] max-md:w-[190px] relative top-[-8px] border-black col-span-2 flex items-center ">
                 {/* <img src="/logo.svg" className="h-[110px] w-[160px] " alt="" /> */}
                 <AnimateLogo />
             </div>
@@ -25,6 +29,9 @@ const AppBar = () => {
                 <Button variant="Filled" >
                     Join Now
                 </Button>
+            </div>
+            <div className="z-[999999999] bg-white shadow-[0px_0px_16px] shadow-black/30 flex justify-center items-center rounded-full h-[50px] w-[50px] " onClick={handleMenu}>
+                <MenuCrossIcons />
             </div>
         </div>
     )
