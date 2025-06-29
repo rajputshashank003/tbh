@@ -10,7 +10,7 @@ const InteractiveImage_1 = () => {
     const [selectedImageIndex, setSelectedImageIndex] = useState(0);
     const [fade, setFade] = useState(true);
 
-    const handleImageChange = (index) => {
+    const handleImageChange = (index: any) => {
         setFade(false);
         setTimeout(() => {
             setSelectedImageIndex(index);

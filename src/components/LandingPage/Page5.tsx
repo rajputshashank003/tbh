@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import AutoMotion from "../AutoMotion";
 import { motion } from "motion/react";
 
 const Page5 = () => {
