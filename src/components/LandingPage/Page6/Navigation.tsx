@@ -1,7 +1,7 @@
 const Navigation = () => {
 
     return (
-        <div style={{ fontFamily: 'f3, serif'}} className="flex py-[16px] flex-row items-center gap-[16px] " >
+        <div style={{ fontFamily: 'f3, serif'}} className="flex py-[16px] max-sm:text-[10px] max-md:text-[15px] flex-row items-center gap-[16px] " >
             <div className="all123">
                 All
             </div>

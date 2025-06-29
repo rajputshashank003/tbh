@@ -45,7 +45,7 @@ const AnimatedGrids = () => {
                 <div className="grid_items_4 sm:row-span-1 relative md:row-span-1 p-6 sm:col-span-1 bg-gray-100 h-full w-full rounded-[12px] overflow-hidden ">
                     <div>
                         <h2 className="text-xl font-semibold">Eco-Friendly Practices</h2>
-                        <p className="text-sm mt-2">
+                        <p className="max-sm:text-[12px] text-sm mt-2">
                             Connecting with the right mentor has never been easier. Follow
                             these simple steps to start your journey
                         </p>

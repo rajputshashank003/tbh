@@ -117,25 +117,25 @@ const Page6 = () => {
     });
     return (
         <div data-scroll data-scroll-speed={0.06} ref={par} className="rounded-[12px] bg-white shadow-[0px_2px_16px] shadow-gray-300 mt-[40px] py-2 px-[16px] min-h-[70vh] ">
-            <div className="top flex flex-row justify-between">
-            <div
-                style={{ fontFamily: "f5, sans-serif" }}
-                className="tag_line text-[40px] max-md:text-center md:text-[50px] lg:text-[70px] leading-[1]"
-            >
-                <div className="mh">
-                    <div className="courses inline-block">Courses &nbsp;</div>
-                    <div className="across inline-block">Across</div>
+            <div className="top flex flex-col max-md:items-center max-md:gap-[16px] md:flex-row justify-between">
+                <div
+                    style={{ fontFamily: "f5, sans-serif" }}
+                    className="tag_line text-[40px] max-md:text-center md:text-[50px] lg:text-[70px] leading-[1]"
+                >
+                    <div className="mh">
+                        <div className="courses inline-block">Courses &nbsp;</div>
+                        <div className="across inline-block">Across</div>
+                    </div>
+                    <div className="rf">
+                        <div className="multiple inline-block">Multiple &nbsp;</div>
+                        <div className="categories inline-block">Categories</div>
+                    </div>
                 </div>
-                <div className="rf">
-                    <div className="multiple inline-block">Multiple &nbsp;</div>
-                    <div className="categories inline-block">Categories</div>
+                <div className="w-[130px] ">
+                    <Button variant="Filled">
+                        Register
+                    </Button>
                 </div>
-            </div>
-            <div className="w-[130px] ">
-                <Button variant="Filled">
-                    Register
-                </Button>
-            </div>
             </div>
             <Navigation />
             <AnimatedGrids />

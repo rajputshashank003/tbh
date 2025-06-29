@@ -43,11 +43,11 @@ const Page5 = () => {
                 </div>
 
                 {/* Right Column (image) */}
-                <div data-scroll data-scroll-speed={0.05} className="w-full h-full max-lg:mt-[10%] max-lg:h-[70vh] relative lg:col-span-1">
+                <div data-scroll data-scroll-speed={0.05} className="w-full h-fit overflow-hidden max-lg:mt-[10%] relative lg:col-span-1">
                     <img
                         src="/LandingPage/Page5/Yellow_cover.svg"
                         alt="Therapist Tags"
-                        className="w-full h-full z-[1] object-contain absolute top-0 left-0"
+                        className="w-full h-full z-[1] object-contain relative top-0 left-0"
                     />
                     <img
                         src={imageList[currentImage]}
