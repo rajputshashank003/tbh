@@ -39,7 +39,7 @@ const SlideMenu = () => {
                         </Link>
                     ))
                 }
-                <div className="flex flex-row absolute bottom-10 right-10 gap-[16px] md:hidden col-span-4 justify-center items-center">
+                <div className="flex flex-row absolute bottom-[10%] right-10 gap-[16px] md:hidden col-span-4 justify-center items-center">
                     <Button variant="Empty" >
                         Login
                     </Button>
