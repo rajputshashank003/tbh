@@ -15,10 +15,12 @@ const App = () => {
     return (
         <BrowserRouter>
             <AppBarProvider>
-                <div className="min-h-screen px-[20px] bg-[#F8F4F2] pb-[60px] ">
-                    <AppBar />
-                    <SlideMenu/>
-                    <LandingPage />
+                <div className="bg-[#F8F4F2] flex justify-center items-center flex-col">
+                    <div className="min-h-screen max-w-[1400px] px-[20px]  pb-[60px] ">
+                        <AppBar />
+                        <SlideMenu/>
+                        <LandingPage />
+                    </div>
                 </div>
             </AppBarProvider>
         </BrowserRouter>

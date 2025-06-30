@@ -244,9 +244,9 @@ const Page1 = () => {
 
 
     return (
-        <div className="lg:grid grid-cols-2 items-center flex flex-col md:px-[100px] px-[20px] py-[26px] text-[#211E1D] overflow-hidden ">
+        <div className="lg:grid grid-cols-2 items-center lg:items-start flex flex-col md:px-[100px] px-[20px] py-[26px] text-[#211E1D] overflow-hidden ">
             {/* left */}
-            <div className="flex flex-col max-lg:items-center max-lg:text-center col-span-1 gap-[62px] ">
+            <div className="flex flex-col max-lg:items-center max-lg:text-center col-span-1 gap-[40px] ">
                 <div
                     style={{ fontFamily: "f5, sans-serif" }}
                     className="tag_line text-[40px] max-md:text-center md:text-[50px] lg:text-[70px] leading-[1]"
