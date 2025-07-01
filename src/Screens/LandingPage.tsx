@@ -7,8 +7,7 @@ import Page6 from "../components/LandingPage/Page6"
 
 const LandingPage = () => {
     return (
-        <div>
-            {/* part1 */}
+        <div className="flex flex-col justify-center items-center">
             <Page1 />
             <Page2 />
             <Page3 />

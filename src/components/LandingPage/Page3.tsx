@@ -1,6 +1,6 @@
 const Page3 = () => {
     return (
-        <div data-scroll data-scroll-speed={0.09} className="md:grid md:grid-cols-2 md:gap-[26px] py-[5%] px-[2%] bg-white mt-[20px] rounded-[12px] shadow-[0px_0px_10px] shadow-gray-200 overflow-hidden flex flex-col lg:mx-[15%] md:mx-[8%] mx-[2%] ">
+        <div data-scroll data-scroll-speed={0.09} className="md:grid max-sm:mx-[40px] md:grid-cols-2 md:gap-[26px] py-[5%] px-[2%] bg-white mt-[20px] rounded-[12px] shadow-[0px_0px_10px] shadow-gray-200 overflow-hidden flex flex-col lg:mx-[15%] md:mx-[8%] mx-[2%] ">
             <div className="col-span-1 relative h-full w-full">
                 <div className="absolute right-0 h-full w-4 max-sm:w-8 border-2 border-white bg-white z-[2]"></div>
                 <video src="/LandingPage/Page3/v1.mp4" autoPlay muted loop className="h-full object-cover z-[1] w-full"></video>

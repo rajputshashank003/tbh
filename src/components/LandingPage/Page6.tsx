@@ -116,11 +116,11 @@ const Page6 = () => {
         );
     });
     return (
-        <div data-scroll data-scroll-speed={0.06} ref={par} className="rounded-[12px] bg-white shadow-[0px_2px_16px] shadow-gray-300 mt-[40px] py-2 px-[16px] min-h-[70vh] ">
+        <div data-scroll data-scroll-speed={0.06} ref={par} className="rounded-[12px] max-sm:mx-[40px] bg-white shadow-[0px_2px_16px] shadow-gray-300 mt-[40px] py-2 px-[16px] min-h-[70vh] ">
             <div className="top flex flex-col max-md:items-center max-md:gap-[16px] md:flex-row justify-between">
                 <div
                     style={{ fontFamily: "f5, sans-serif" }}
-                    className="tag_line text-[40px] max-md:text-center md:text-[50px] lg:text-[70px] leading-[1]"
+                    className="tag_line text-[35px] max-md:text-center md:text-[50px] lg:text-[70px] leading-[1]"
                 >
                     <div className="mh">
                         <div className="courses inline-block">Courses &nbsp;</div>

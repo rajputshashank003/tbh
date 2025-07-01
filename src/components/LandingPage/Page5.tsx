@@ -23,7 +23,7 @@ const Page5 = () => {
     }, []);
 
     return (
-        <div data-scroll data-scroll-speed={-0.06} className="w-full px-[2%] md:px-[4%] lg:px-[8%] py-16 bg-white rounded-[12px] shadow-[0px_2px_16px] shadow-gray-300">
+        <div data-scroll data-scroll-speed={-0.06} className="max-sm:mx-[40px] px-[2%] md:px-[4%] lg:px-[8%] py-16 bg-white rounded-[12px] shadow-[0px_2px_16px] shadow-gray-300">
             <div className="lg:grid lg:grid-cols-2 items-center gap-10">
                 <div className="space-y-6 lg:col-span-1">
                     <h2 className="text-[26px] italic" style={{ fontFamily: 'f1, serif' }}>

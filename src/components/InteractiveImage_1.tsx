@@ -42,7 +42,7 @@ const InteractiveImage_1 = () => {
     ];
 
     return (
-        <div className="mx-[2%] md:mx-[8%] lg:mx-[10%] pb-[20px]">
+        <div className="px-[20px] md:mx-[8%] lg:mx-[10%] pb-[20px]">
             <div style={{ fontFamily: 'f1, serif' }} className="text-[26px] pb-[50px]">
                 One platform, multiple touchpoints.
             </div>

@@ -263,12 +263,12 @@ const Page1 = () => {
                         style={{ fontFamily: "f1, sans-serif" }}
                         className="text-[94px] max-md:top-4 relative students"
                     >
-                        <div className="students1 inline-block">students</div>
+                        <div data-scroll data-scroll-speed={-0.04} className="students1 inline-block">students</div>
                     </div>
                 </div>
                 <div
                     style={{ fontFamily: "f3, sans-serif" }}
-                    className="text-[24px] max-lg:text-center para_1 lg:pr-[200px] leading-tight whitespace-normal font-[500] text-[rgb(33, 30, 29)] "
+                    className="text-[18px] max-sm:px-[15px] md:text-[24px] max-lg:text-center para_1 lg:pr-[200px] leading-tight whitespace-normal font-[500] text-[rgb(33, 30, 29)] "
                 >
                     Helping your students succeed and thrive with the help of licensed
                     therapists and a community of peers. When and where they need it most.
@@ -282,9 +282,9 @@ const Page1 = () => {
             {/* right  */}
             <div ref={arrows} className="flex flex-col col-span-1 max-md:min-h-[60vh] min-h-[100vh] max-lg:w-[350px] top-10 lg:-top-10 left-0 relative">
                 <img src="/star2.svg" alt="" className="absolute live_svg a1 z-[3] w-[4vw] left-[50%] top-[50%]" />
-                <img src="/o.svg" alt="" className="absolute live_svg a2 z-[3] w-[4vw] left-[80%] top-[40%]" />
+                {/* <img src="/o.svg" alt="" className="absolute live_svg a2 z-[3] w-[4vw] left-[80%] top-[40%]" /> */}
                 <img src="/star1.svg" alt="" className="absolute live_svg a3 z-[3] w-[4vw] left-[14%] top-[40%]" />
-                <img src="/live.svg" alt="" className="absolute live_svg a3 z-[3] w-[10vw] max-sm:w-[15vw] right-[30%] md:right-[-10%] lg:right-[20%] top-[10%]" />
+                <img data-scroll data-scroll-speed={-0.04} src="/live.svg" alt="" className="absolute live_svg a3 z-[3] w-[10vw] max-sm:w-[15vw] right-[30%] md:right-[-10%] lg:right-[20%] top-[10%]" />
                 <div className="z-[2] h-[15vw] w-[15vw] absolute top-[25%] md:top-[20%] left-[20%]">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="inherit" height="inherit" fill="none">
                         <g transform="translate(100,75)">
