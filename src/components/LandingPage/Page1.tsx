@@ -391,7 +391,7 @@ const Page1 = () => {
                     <video
                         className=" outline-none ring-0 shadow-none m-0 p-0 block"
                         src="/v2.mp4"
-                        autoPlay loop playsInline
+                        autoPlay loop
                     />
                     <div className="absolute bottom-0 h-2 w-full bg-[#F8F4F2]"></div>
                 </div>
@@ -399,7 +399,7 @@ const Page1 = () => {
                     <video
                         className="outline-none ring-0 shadow-none m-0 p-0 block"
                         src="/v3.mp4"
-                        autoPlay loop playsInline
+                        autoPlay loop
                     />
                     <div className="absolute bottom-0 h-2 w-full bg-[#F8F4F2]"></div>
                 </div>
@@ -407,7 +407,7 @@ const Page1 = () => {
                     <video
                         className="outline-none ring-0 shadow-none m-0 p-0 block"
                         src="/v5.mp4"
-                        autoPlay loop playsInline
+                        autoPlay loop
                     />
                     <div className="absolute bottom-0 h-2 w-full bg-[#F8F4F2]"></div>
                 </div>
