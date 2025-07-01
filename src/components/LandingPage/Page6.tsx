@@ -116,7 +116,7 @@ const Page6 = () => {
         );
     });
     return (
-        <div data-scroll data-scroll-speed={0.06} ref={par} className="rounded-[12px] max-sm:mx-[6vw] bg-white shadow-[0px_2px_16px] shadow-gray-300 mt-[40px] py-[16px] px-[16px] min-h-[70vh] ">
+        <div data-scroll data-scroll-speed={0.06} ref={par} className="rounded-[12px] max-sm:mx-[8vw] bg-white shadow-[0px_2px_16px] shadow-gray-300 mt-[40px] py-[16px] px-[16px] min-h-[70vh] ">
             <div className="top flex flex-col max-md:items-center max-md:gap-[16px] md:flex-row justify-between">
                 <div
                     style={{ fontFamily: "f5, sans-serif" }}
