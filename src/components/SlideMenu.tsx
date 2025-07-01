@@ -23,7 +23,7 @@ const SlideMenu = () => {
     ];
 
     return (
-        <div className="absolute md:hidden overflow-hidden z-[999] top-0 left-0 h-screen w-full">
+        <div className="absolute md:hidden pointer-events-none overflow-hidden z-[999] top-0 left-0 h-screen w-full">
             <div className='absolute h-screen w-screen  bg-white/20 backdrop-blur-[22px] menu_bg left-[100%] top-0 pt-[200px] flex flex-col gap-2 tracking-tighter  uppercase p-4'>
                 {
                     data.map((el, ind) => (
