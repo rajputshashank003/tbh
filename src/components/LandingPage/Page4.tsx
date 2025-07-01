@@ -56,7 +56,7 @@ const Page4 = () => {
     };
 
     return (
-        <div data-scroll data-scroll-speed={0.06} className="overflow-hidden bg-white mx-[40px] mb-12">
+        <div data-scroll data-scroll-speed={0.06} className="overflow-hidden bg-white mx-[4%] mb-12">
             <div className="relative h-fit bg-[#FD7E40] pt-16 mt-[1px]  pl-4 ">
                 <div className="absolute h-[600px] extra_cut -top-[95%] rotate-[6deg] bg-[#F8F4F2] w-[120vw] left-[-20%]"></div>
                 <h2 className="text-[26px] pt-[10%] md:pt-[5%]" style={{ fontFamily: 'f1, serif' }}>
