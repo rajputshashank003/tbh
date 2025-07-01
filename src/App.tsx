@@ -16,7 +16,7 @@ const App = () => {
         <BrowserRouter>
             <AppBarProvider>
                 <div className="bg-[#F8F4F2] flex justify-center items-center flex-col">
-                    <div className="min-h-screen max-w-[1400px] w-screen overflow-hiddn px-[60px] flex justify-center items-center flex-col pb-[60px] ">
+                    <div className="min-h-screen md:max-w-[1400px] max-md:max-w-screen overflow-hidden px-[60px] flex justify-center items-center flex-col pb-[60px] ">
                         <AppBar />
                         <SlideMenu/>
                         <LandingPage />
