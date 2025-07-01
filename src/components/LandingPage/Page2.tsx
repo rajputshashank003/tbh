@@ -8,12 +8,12 @@ const Page2 = () => {
                 <span>Trusted by students at over 100 schools:</span>
                 <img src="Arrows/arrow3.svg" className="h-[50px] w-[70px] max-md:hidden rotate-[-40deg] " alt="" />
             </div>
-            <div className="clg_names mx-[40px] sm:mx-[5%] md:mx-[82px]rounded-[20px] max-sm:gap-[0px] gap-[16px]  bg-white min-h-[150px] shadow-md flex flex-row max-sm:flex-row justify-around items-center shadow-gray-400 bg">
+            <div className="clg_names mx-[40px] sm:mx-[5%] md:mx-[82px] rounded-[20px] max-sm:gap-[0px] gap-[16px]  bg-white min-h-[150px] shadow-md flex flex-row max-sm:flex-row justify-around items-center shadow-gray-400 bg">
                 <div className="lg:flex-row flex-col gap-[26px] flex ">
                   <img src="/Colleges/c1.svg" className="h-[30px] max-md:w-[15vw] max-sm:w-[40vw]" alt="" />
                   <img src="/Colleges/c2.svg" className="h-[30px] max-md:w-[15vw] max-sm:w-[40vw]" alt="" />
                 </div>
-                <div className="lg:flex-row flex-col gap-[26px]flex">
+                <div className="lg:flex-row flex-col gap-[26px] flex">
                   <img src="/Colleges/c3.svg" className="h-[30px] max-md:w-[15vw] max-sm:w-[40vw]" alt="" />
                   <img src="/Colleges/c4.svg" className="h-[30px] max-md:w-[15vw] max-sm:w-[40vw]" alt="" />
                 </div>
