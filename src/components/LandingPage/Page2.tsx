@@ -2,7 +2,7 @@ import InteractiveImage_1 from "../InteractiveImage_1"
 
 const Page2 = () => {
   return (
-    <div data-scroll data-scroll-speed={0.01} className="bg-white max-sm:mx-[4%] min-h-[100vh] md:top-[60px] relative flex flex-col justify-center items-center rounded-[12px] shadow-[0px_0px_10px] shadow-gray-200">
+    <div data-scroll data-scroll-speed={0.01} className="bg-white max-sm:mx-[6vw] min-h-[100vh] md:top-[60px] relative flex flex-col justify-center items-center rounded-[12px] shadow-[0px_0px_10px] shadow-gray-200">
         <div data-scroll data-scroll-speed={0.06} className="relative -top-[80px] w-full">
             <div style={{ fontFamily: 'f1, serif'}} className="text-[22px] md:text-[26px] md:mx-[20%] flex flex-row">
                 <span>Trusted by students at over 100 schools:</span>
