@@ -12,7 +12,41 @@ const AppBarContext = createContext<AppBarContextType | undefined>(undefined);
 export const AppBarProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     const [isOpen, setIsOpen] = useState(false);
 
+    const handle_cross_icon = () => {
+        const gsapTl = gsap.timeline();
+        if(!isOpen){
+            gsapTl.to(".l1", {
+                top : "0rem"
+            }, "a1")
+            gsapTl.to(".l1", {
+                rotate : "45deg",
+                duration : 0.3
+            }, "a2")
+            gsapTl.to(".l2", {
+                top : "0rem"
+            }, "a1")
+            gsapTl.to(".l2", {
+                rotate : "-45deg" ,
+                duration : 0.3
+            }, "a2")
+        } else {
+            gsapTl.to(".l1", {
+                rotate: "0deg",
+            }, "a2")
+            gsapTl.to(".l1", {
+                top: "-0.3rem"
+            }, "a1")
+            gsapTl.to(".l2", {
+                rotate: "0deg",
+            }, "a2")
+            gsapTl.to(".l2", {
+                top: "0.3rem"
+            }, "a1")
+        }
+    }
+    
     const handleMenu = () => {
+        handle_cross_icon();
         const gsapTl = gsap.timeline();
         gsapTl.to(".menu_options", {
             top: isOpen ? "3.5rem" : 0,

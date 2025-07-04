@@ -1,30 +1,14 @@
 import { Link } from 'react-router-dom';
 import Button from './Button';
+import { useAppBar } from '../Contexts/UseAppBar';
+import { data } from '../utils/slidemenu_data';
 
 const SlideMenu = () => {
-
-    const data = [
-        {
-            name: 'Basic Needs',
-            link: '/asdfsad'
-        },
-        {
-            name: 'K12',
-            link: '/asdfsad'
-        },
-        {
-            name: 'Heiger Ed',
-            link: '/asdfsad'
-        },
-        {
-            name: 'Families',
-            link: '/asdfsad'
-        }
-    ];
+    const { isOpen } = useAppBar();
 
     return (
-        <div className="absolute md:hidden pointer-events-none overflow-hidden z-[999] top-0 left-0 h-screen w-full">
-            <div className='absolute h-screen w-screen  bg-white/20 backdrop-blur-[22px] menu_bg left-[100%] top-0 pt-[200px] flex flex-col gap-2 tracking-tighter  uppercase p-4'>
+        <div style={{ pointerEvents: isOpen ? undefined : 'none' }} className="absolute md:hidden overflow-hidden z-[999] top-0 left-0 h-screen w-full">
+            <div className='absolute h-screen w-screen  bg-[#F8F4F2]/20 backdrop-blur-[20px] menu_bg left-[100%] top-0 pt-[200px] flex flex-col gap-2 tracking-tighter  uppercase p-4'>
                 {
                     data.map((el, ind) => (
                         <Link key={ind} to={el.link}>
